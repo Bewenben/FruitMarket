@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:fruit_market/splash.dart';
 import 'package:flutter/cupertino.dart';
 
