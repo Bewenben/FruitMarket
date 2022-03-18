@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/home/home.dart';
+
+import 'package:fruit_market/splash.dart';
+import 'package:flutter/cupertino.dart';
+
+import 'account.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MainApp extends StatelessWidget {
+  const MainApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(fontFamily: 'Poppins'),
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Bottomnavbar(),
-
+      home: Splash(),
+      title: "Fruit Market",
     );
   }
 }
