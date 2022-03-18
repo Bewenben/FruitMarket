@@ -1,6 +1,6 @@
 // This is a generated file; do not edit or check into version control.
 FLUTTER_ROOT=D:\Programs\IDE Programs\flutter
-FLUTTER_APPLICATION_PATH=D:\flutter\FruitMarket
+FLUTTER_APPLICATION_PATH=C:\Users\omark\Downloads\Compressed\FruitMarket-main\FruitMarket-main
 COCOAPODS_PARALLEL_CODE_SIGN=true
 FLUTTER_TARGET=lib\main.dart
 FLUTTER_BUILD_DIR=build

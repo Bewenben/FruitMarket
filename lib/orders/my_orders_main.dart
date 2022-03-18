@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project01/orders/orders.dart';
+import 'package:fruitmarket2/orders/orders.dart';
 
 class MyOrders extends StatelessWidget {
   const MyOrders({Key? key}) : super(key: key);
