@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project01/constants/constant.dart';
-import 'package:project01/notifications/notifications_main.dart';
+import 'package:fruitmarket2/notifications/notifications_main.dart';
+
+import '../constants/constant.dart';
 
 class HelpScreen extends StatelessWidget {
   const HelpScreen({Key? key}) : super(key: key);

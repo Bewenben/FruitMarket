@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:project01/constants/constant.dart';
-import 'package:project01/fav/favourites.dart';
-import 'package:project01/home/menupage.dart';
+import 'package:fruitmarket2/fav/favourites.dart';
+import 'package:fruitmarket2/home/menupage.dart';
+
+import '../constants/constant.dart';
 
 class FavouritesScreen extends StatefulWidget {
   const FavouritesScreen({Key? key}) : super(key: key);

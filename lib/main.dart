@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitmarket2/home/home.dart';
 
 void main() {
   runApp(const MyApp());

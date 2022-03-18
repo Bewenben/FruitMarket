@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project01/constants/constant.dart';
-import 'package:project01/fav/favourites_main.dart';
+import 'package:fruitmarket2/constants/constants.dart';
+import 'package:fruitmarket2/fav/favourites_main.dart';
 import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
 
 
