@@ -4,7 +4,6 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:path_provider/path_provider.dart';
 
 import 'intro1.dart';
 import 'intro3.dart';

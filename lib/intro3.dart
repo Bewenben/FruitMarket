@@ -1,7 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'page_1.dart';
 
 import 'account.dart';
 
@@ -65,7 +64,7 @@ class Intro3 extends StatelessWidget {
             onPressed: () {
               Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder:(context) => const Account())
+                  MaterialPageRoute(builder:(context) => const page_1())
               );
             },
             style: ButtonStyle(

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:fruit_market/splash.dart';
 import 'package:flutter/cupertino.dart';
-
-import 'account.dart';
+import 'splash.dart';
 
 void main() {
   runApp(const MainApp());

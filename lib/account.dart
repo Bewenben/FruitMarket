@@ -11,6 +11,7 @@ class Account extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(

@@ -35,7 +35,7 @@ class _FavouritesScreenState extends State<FavouritesScreen> {
         children: [
           IconButton(
               onPressed: () {
-                Navigator.pop(context, MaterialPageRoute(builder: (context) {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return const Menupage(); //temporarily goes back to my orders screen
                 }));
               },
