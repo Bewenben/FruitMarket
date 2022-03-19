@@ -4,6 +4,7 @@
 
 import 'package:flutter/material.dart';
 
+import 'home/home.dart';
 import 'page_2.dart';
 const green = Color(0xff69a03a);
 const gray = Color(0xffEFEFEF);
@@ -87,7 +88,9 @@ class page_1 extends StatelessWidget {
                           borderRadius: const BorderRadius.all(Radius.circular(20)),
                         ),
                         child: InkWell(
-                          onTap: (){},
+                          onTap: (){
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const Bottomnavbar()));
+                          },
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children:  [
@@ -107,7 +110,9 @@ class page_1 extends StatelessWidget {
                           borderRadius: const BorderRadius.all(Radius.circular(20)),
                         ),
                         child: InkWell(
-                          onTap: (){},
+                          onTap: (){
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const Bottomnavbar()));
+                          },
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children:  [

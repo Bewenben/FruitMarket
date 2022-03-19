@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:fruitmarket2/page_1.dart';
 
+import 'fav/favourites_main.dart';
+import 'help_main/help_main.dart';
+import 'orders/my_orders_main.dart';
+
 class Account extends StatelessWidget {
   const Account({Key? key}) : super(key: key);
 
@@ -46,35 +50,45 @@ class Account extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
-                  Icon(Icons.shopping_bag, color: Color(0xff69a03a),size: 35,),
-                  SizedBox(width: 5,),
-                  Text("My Orders",style: TextStyle(
-                    color: Color(0xff69a03a),
-                    fontSize: 18,
-                  ),),
-                ],
+            InkWell(
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const MyOrders()));
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: const [
+                    Icon(Icons.shopping_bag, color: Color(0xff69a03a),size: 35,),
+                    SizedBox(width: 5,),
+                    Text("My Orders",style: TextStyle(
+                      color: Color(0xff69a03a),
+                      fontSize: 18,
+                    ),),
+                  ],
+                ),
               ),
             ),
             const Divider(color: Colors.black,thickness: 0.1,height: 0,),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
-                  Icon(Icons.favorite, color: Color(0xff69a03a),size: 35,),
-                  SizedBox(width: 5,),
-                  Text("Favourites",style: TextStyle(
-                    color: Color(0xff69a03a),
-                    fontSize: 18,
-                  ),),
-                ],
+            InkWell(
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const FavouritesScreen()));
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: const [
+                    Icon(Icons.favorite, color: Color(0xff69a03a),size: 35,),
+                    SizedBox(width: 5,),
+                    Text("Favourites",style: TextStyle(
+                      color: Color(0xff69a03a),
+                      fontSize: 18,
+                    ),),
+                  ],
+                ),
               ),
             ),
             const Divider(color: Colors.black,thickness: 0.1,height: 0,),
@@ -94,19 +108,24 @@ class Account extends StatelessWidget {
               ),
             ),
             const Divider(color: Colors.black,thickness: 0.1,height: 0,),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
-                  Icon(Icons.shopping_cart, color: Color(0xff69a03a),size: 35,),
-                  SizedBox(width: 5,),
-                  Text("My Cart",style: TextStyle(
-                    color: Color(0xff69a03a),
-                    fontSize: 18,
-                  ),),
-                ],
+            InkWell(
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const page_1()));
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: const [
+                    Icon(Icons.shopping_cart, color: Color(0xff69a03a),size: 35,),
+                    SizedBox(width: 5,),
+                    Text("My Cart",style: TextStyle(
+                      color: Color(0xff69a03a),
+                      fontSize: 18,
+                    ),),
+                  ],
+                ),
               ),
             ),
             const Divider(color: Colors.black,thickness: 0.1,height: 0,),
@@ -142,19 +161,24 @@ class Account extends StatelessWidget {
               ),
             ),
             const Divider(color: Colors.black,thickness: 0.1,height: 0,),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
-                  Icon(Icons.help, color: Color(0xff69a03a),size: 35,),
-                  SizedBox(width: 5,),
-                  Text("Help",style: TextStyle(
-                    color: Color(0xff69a03a),
-                    fontSize: 18,
-                  ),),
-                ],
+            InkWell(
+              onTap: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const HelpScreen()));
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: const [
+                    Icon(Icons.help, color: Color(0xff69a03a),size: 35,),
+                    SizedBox(width: 5,),
+                    Text("Help",style: TextStyle(
+                      color: Color(0xff69a03a),
+                      fontSize: 18,
+                    ),),
+                  ],
+                ),
               ),
             ),
             const Divider(color: Colors.black,thickness: 0.1,height: 0,),
