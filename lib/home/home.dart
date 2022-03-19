@@ -37,6 +37,7 @@ class _BottomnavbarState extends State<Bottomnavbar> {
         onPageChanged: _onPageChanged,
       ),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 20,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: mPrimaryColor,
         unselectedItemColor: mSecondaryColor,
