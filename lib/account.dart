@@ -1,9 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-
-import 'intro1.dart';
+import 'package:fruitmarket2/page_1.dart';
 
 class Account extends StatelessWidget {
   const Account({Key? key}) : super(key: key);
@@ -164,7 +160,7 @@ class Account extends StatelessWidget {
             const Divider(color: Colors.black,thickness: 0.1,height: 0,),
             InkWell(
               onTap: (){
-                Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const Intro1()));
+                Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const page_1()));
               },
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 18,horizontal: 15),

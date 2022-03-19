@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitmarket2/account.dart';
 import 'package:fruitmarket2/constants/constant.dart';
 import 'package:fruitmarket2/fav/favourites_main.dart';
 import 'package:fruitmarket2/home/menupage.dart';
@@ -12,7 +13,7 @@ class Bottomnavbar extends StatefulWidget {
 
 class _BottomnavbarState extends State<Bottomnavbar> {
   final PageController _pageController = PageController();
-  final List<Widget> _screens = [const Menupage(), const FavouritesScreen()];
+  final List<Widget> _screens = [const Menupage(), const FavouritesScreen(), const Account(), const Account()];
 
   void _onPageChanged(int index) {
     setState(() {
