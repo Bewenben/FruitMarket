@@ -1,14 +1,10 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:fruitmarket2/page_1.dart';
+import 'package:fruitmarket2/login/page_1.dart';
 
-import 'intro2.dart';
 import 'intro3.dart';
 
-class Intro1 extends StatelessWidget {
-  const Intro1({Key? key}) : super(key: key);
+class Intro2 extends StatelessWidget {
+  const Intro2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,14 +32,14 @@ class Intro1 extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 50),
-          Image.asset("images/page1.png", height: 300, width: 300, fit: BoxFit.fitWidth,),
+          Image.asset("images/page2.png", height: 300, width: 300, fit: BoxFit.fitWidth,),
           const SizedBox(height: 20),
-          const Text("E Shopping",style: TextStyle(
+          const Text("Delivery on the way",style: TextStyle(
             color: Colors.black,
             fontSize: 18,
           ),),
           const SizedBox(height: 20),
-          const Text("Explore top organic fruits & grab them",style: TextStyle(
+          const Text("Get your order by speed delivery",style: TextStyle(
             color: Colors.grey,
             fontSize: 16,
           ),),
@@ -55,8 +51,9 @@ class Intro1 extends StatelessWidget {
                 height: 10,
                 width: 10,
                 decoration: BoxDecoration(
-                  color: const Color(0xff69A03A),
-                  borderRadius: BorderRadius.circular(100),
+                    color: const Color(0xffffffff),
+                    borderRadius: BorderRadius.circular(100),
+                    border: Border.all(color: const Color(0xff69A03A), width: 1)
                 ),
               ),
               Container(
@@ -64,18 +61,17 @@ class Intro1 extends StatelessWidget {
                 height: 10,
                 width: 10,
                 decoration: BoxDecoration(
-                  color: const Color(0xffffffff),
+                  color: const Color(0xff69A03A),
                   borderRadius: BorderRadius.circular(100),
-                  border: Border.all(color: const Color(0xff69A03A), width: 1)
                 ),
               ),
               Container(
                 height: 10,
                 width: 10,
                 decoration: BoxDecoration(
-                  color: const Color(0xffffffff),
-                  borderRadius: BorderRadius.circular(100),
-                  border: Border.all(color: const Color(0xff69A03A), width: 1)
+                    color: const Color(0xffffffff),
+                    borderRadius: BorderRadius.circular(100),
+                    border: Border.all(color: const Color(0xff69A03A), width: 1)
                 ),
               ),
             ],
@@ -85,7 +81,7 @@ class Intro1 extends StatelessWidget {
             onPressed: () {
               Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder:(context) => const Intro2())
+                  MaterialPageRoute(builder:(context) => const Intro3())
               );
             },
             style: ButtonStyle(

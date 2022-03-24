@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../constants/constant.dart';
 import '../../../constants/fruits.dart';
-import '../../../details/details1.dart';
+import '../details/details1.dart';
 
 class Organicfruits extends StatefulWidget {
   const Organicfruits({Key? key}) : super(key: key);

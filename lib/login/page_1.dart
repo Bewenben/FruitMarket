@@ -3,8 +3,7 @@
 //import 'dart:html';
 
 import 'package:flutter/material.dart';
-
-import 'home/home.dart';
+import 'package:fruitmarket2/home/home.dart';
 import 'page_2.dart';
 const green = Color(0xff69a03a);
 const gray = Color(0xffEFEFEF);

@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/home/menupage.dart';
 
-import '../constants/constant.dart';
+import '../../../constants/constant.dart';
 
-class Detailbroccoli extends StatefulWidget {
-  const Detailbroccoli({Key? key}) : super(key: key);
+class Detailanjeer extends StatefulWidget {
+  const Detailanjeer({Key? key}) : super(key: key);
 
   @override
-  State<Detailbroccoli> createState() => _DetailScreenState();
+  State<Detailanjeer> createState() => _DetailScreenState();
 }
 
-class _DetailScreenState extends State<Detailbroccoli> {
+class _DetailScreenState extends State<Detailanjeer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,14 +23,14 @@ class _DetailScreenState extends State<Detailbroccoli> {
                 SizedBox(
                   width: 335,
                   height: 176,
-                  child: Image.asset("assets/images/detail2.png",
+                  child: Image.asset("assets/images/detail3.png",
                       fit: BoxFit.fill),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("Broccoli",
+                      Text("Anjeer",
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
@@ -44,7 +43,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   child: Row(
                     children: const [
                       Text(
-                          "Broccoli is a green vegetable that vaguely  nutritional \nPowerhouse of vitamin,fiber and antioxidents. Broccoli\ncontains lutein and  which mayPrevent from stress and \ncellular damage in your eyes.",
+                          "Anjeer might helps to manage diabetes due to his\nthe breakdown of carbohydrates and prevents the \ndamage of cells.",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -68,7 +67,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Fat",
+                      Text("•  Protein",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -80,7 +79,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Potassium",
+                      Text("•  Folates",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -92,7 +91,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Selenium",
+                      Text("•  Iron",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -104,7 +103,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Vitamin B9",
+                      Text("•  Niacin",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -128,7 +127,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Vitamin K",
+                      Text("•  Vitamin E",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -140,7 +139,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Zinc",
+                      Text("•  Calcium",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -152,7 +151,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Phosphorous",
+                      Text("•  Carbohydrates",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -164,7 +163,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                   padding: const EdgeInsets.only(top: 54.0, left: 40.0),
                   child: Row(
                     children: [
-                      const Text("\$ 190 Per/ kg",
+                      const Text("\$ 260 Per/ kg",
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
@@ -227,8 +226,7 @@ class _DetailScreenState extends State<Detailbroccoli> {
                 IconButton(
                     onPressed: () {
                       setState(() {
-                        Navigator.pop(
-                            context);
+                        Navigator.pop(context);
                       });
                     },
                     icon: const Icon(Icons.arrow_back_ios_new)),

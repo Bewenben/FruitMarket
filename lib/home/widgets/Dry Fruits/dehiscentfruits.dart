@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:fruitmarket2/home/widgets/details/details3.dart';
 
 import '../../../constants/constant.dart';
 import '../../../constants/dryfruits.dart';
-import '../../../details/details3.dart';
 
 class Dehiscentfruits extends StatefulWidget {
   const Dehiscentfruits({Key? key}) : super(key: key);

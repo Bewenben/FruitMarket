@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fruitmarket2/keyboard.dart';
-import 'package:fruitmarket2/page_1.dart';
-import 'package:fruitmarket2/page_3.dart';
+import 'package:fruitmarket2/constants/keyboard.dart';
+import 'package:fruitmarket2/login/page_1.dart';
+import 'package:fruitmarket2/login/page_3.dart';
 
 class page_2 extends StatefulWidget {
   page_2({Key? key}) : super(key: key);

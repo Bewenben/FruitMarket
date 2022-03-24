@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:fruitmarket2/constants/constant.dart';
 import 'package:fruitmarket2/home/menupage.dart';
 
-import '../constants/constant.dart';
 
-class Detailgrape extends StatefulWidget {
-  const Detailgrape({Key? key}) : super(key: key);
+class Detailbroccoli extends StatefulWidget {
+  const Detailbroccoli({Key? key}) : super(key: key);
 
   @override
-  State<Detailgrape> createState() => _DetailScreenState();
+  State<Detailbroccoli> createState() => _DetailScreenState();
 }
 
-class _DetailScreenState extends State<Detailgrape> {
+class _DetailScreenState extends State<Detailbroccoli> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,14 +24,14 @@ class _DetailScreenState extends State<Detailgrape> {
                 SizedBox(
                   width: 335,
                   height: 176,
-                  child: Image.asset("assets/images/detail1.png",
+                  child: Image.asset("assets/images/detail2.png",
                       fit: BoxFit.fill),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("Grapes",
+                      Text("Broccoli",
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
@@ -44,7 +44,7 @@ class _DetailScreenState extends State<Detailgrape> {
                   child: Row(
                     children: const [
                       Text(
-                          "Grapes will provide natural nutrients. The  Chemical \nin organic grapes which can be healthier hair and \nskin. It can be improve Your heart health. Protect your\nbody from Cancer.",
+                          "Broccoli is a green vegetable that vaguely  nutritional \nPowerhouse of vitamin,fiber and antioxidents. Broccoli\ncontains lutein and  which mayPrevent from stress and \ncellular damage in your eyes.",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -68,7 +68,7 @@ class _DetailScreenState extends State<Detailgrape> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Fiber",
+                      Text("•  Fat",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -92,7 +92,7 @@ class _DetailScreenState extends State<Detailgrape> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Fiber",
+                      Text("•  Selenium",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -104,7 +104,7 @@ class _DetailScreenState extends State<Detailgrape> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Iron",
+                      Text("•  Vitamin B9",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -116,19 +116,7 @@ class _DetailScreenState extends State<Detailgrape> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Magnesium",
-                          style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                              fontFamily: "Poppins")),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 18.0, left: 40.0),
-                  child: Row(
-                    children: const [
-                      Text("•  Vitamin C",
+                      Text("•  Vitamin A",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -176,7 +164,7 @@ class _DetailScreenState extends State<Detailgrape> {
                   padding: const EdgeInsets.only(top: 54.0, left: 40.0),
                   child: Row(
                     children: [
-                      const Text("\$ 160 Per/ kg",
+                      const Text("\$ 190 Per/ kg",
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,

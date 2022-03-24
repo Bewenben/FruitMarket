@@ -1,12 +1,10 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:fruitmarket2/intro/intro1.dart';
+import 'package:fruitmarket2/intro/intro3.dart';
 
-import 'intro1.dart';
-import 'intro3.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);

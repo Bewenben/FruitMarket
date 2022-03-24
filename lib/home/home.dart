@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/account.dart';
+import 'package:fruitmarket2/account/account.dart';
 import 'package:fruitmarket2/constants/constant.dart';
 import 'package:fruitmarket2/fav/favourites_main.dart';
 import 'package:fruitmarket2/home/menupage.dart';

@@ -1,11 +1,14 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'page_1.dart';
+import 'package:fruitmarket2/login/page_1.dart';
 
-import 'account.dart';
+import 'intro2.dart';
+import 'intro3.dart';
 
-class Intro3 extends StatelessWidget {
-  const Intro3({Key? key}) : super(key: key);
+class Intro1 extends StatelessWidget {
+  const Intro1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,15 +17,33 @@ class Intro3 extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(height: 70),
-          Image.asset("images/page3.png", height: 300, width: 300, fit: BoxFit.fitWidth,),
+          InkWell(
+            onTap: (){
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder:(context) => const page_1())
+              );
+            },
+            child: const Padding(
+              padding: EdgeInsets.only(right: 20),
+              child: Align(
+                alignment: Alignment.topRight,
+                child: Text("Skip", style:TextStyle(
+                  color: Colors.grey,
+                  fontSize: 17,
+                )),
+              ),
+            ),
+          ),
+          const SizedBox(height: 50),
+          Image.asset("images/page1.png", height: 300, width: 300, fit: BoxFit.fitWidth,),
           const SizedBox(height: 20),
-          const Text("Delivery Arrived",style: TextStyle(
+          const Text("E Shopping",style: TextStyle(
             color: Colors.black,
             fontSize: 18,
           ),),
           const SizedBox(height: 20),
-          const Text("Order is arrived at your Place",style: TextStyle(
+          const Text("Explore top organic fruits & grab them",style: TextStyle(
             color: Colors.grey,
             fontSize: 16,
           ),),
@@ -34,9 +55,8 @@ class Intro3 extends StatelessWidget {
                 height: 10,
                 width: 10,
                 decoration: BoxDecoration(
-                    color: const Color(0xffffffff),
-                    borderRadius: BorderRadius.circular(100),
-                    border: Border.all(color: const Color(0xff69A03A), width: 1)
+                  color: const Color(0xff69A03A),
+                  borderRadius: BorderRadius.circular(100),
                 ),
               ),
               Container(
@@ -44,17 +64,18 @@ class Intro3 extends StatelessWidget {
                 height: 10,
                 width: 10,
                 decoration: BoxDecoration(
-                    color: const Color(0xffffffff),
-                    borderRadius: BorderRadius.circular(100),
-                    border: Border.all(color: const Color(0xff69A03A), width: 1)
+                  color: const Color(0xffffffff),
+                  borderRadius: BorderRadius.circular(100),
+                  border: Border.all(color: const Color(0xff69A03A), width: 1)
                 ),
               ),
               Container(
                 height: 10,
                 width: 10,
                 decoration: BoxDecoration(
-                  color: const Color(0xff69A03A),
+                  color: const Color(0xffffffff),
                   borderRadius: BorderRadius.circular(100),
+                  border: Border.all(color: const Color(0xff69A03A), width: 1)
                 ),
               ),
             ],
@@ -62,21 +83,21 @@ class Intro3 extends StatelessWidget {
           const SizedBox(height: 100),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder:(context) => const page_1())
+                  MaterialPageRoute(builder:(context) => const Intro2())
               );
             },
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(const Color(0xff69A03A)),
-              padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.symmetric(horizontal: 30, vertical: 15)),
+              padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.symmetric(horizontal: 60, vertical: 15)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
             ),
-            child: const Text("Get Started", style: TextStyle(
+            child: const Text("Next", style: TextStyle(
               color: Colors.white,
               fontSize: 17,
             ),),

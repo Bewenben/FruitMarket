@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../constants/constant.dart';
-import '../home/menupage.dart';
+import '../../../constants/constant.dart';
 
-class Detailanjeer extends StatefulWidget {
-  const Detailanjeer({Key? key}) : super(key: key);
+
+class Detailgrape extends StatefulWidget {
+  const Detailgrape({Key? key}) : super(key: key);
 
   @override
-  State<Detailanjeer> createState() => _DetailScreenState();
+  State<Detailgrape> createState() => _DetailScreenState();
 }
 
-class _DetailScreenState extends State<Detailanjeer> {
+class _DetailScreenState extends State<Detailgrape> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,14 +24,14 @@ class _DetailScreenState extends State<Detailanjeer> {
                 SizedBox(
                   width: 335,
                   height: 176,
-                  child: Image.asset("assets/images/detail3.png",
+                  child: Image.asset("assets/images/detail1.png",
                       fit: BoxFit.fill),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("Anjeer",
+                      Text("Grapes",
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
@@ -44,7 +44,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                   child: Row(
                     children: const [
                       Text(
-                          "Anjeer might helps to manage diabetes due to his\nthe breakdown of carbohydrates and prevents the \ndamage of cells.",
+                          "Grapes will provide natural nutrients. The  Chemical \nin organic grapes which can be healthier hair and \nskin. It can be improve Your heart health. Protect your\nbody from Cancer.",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -68,7 +68,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Protein",
+                      Text("•  Fiber",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -80,7 +80,19 @@ class _DetailScreenState extends State<Detailanjeer> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Folates",
+                      Text("•  Potassium",
+                          style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "Poppins")),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 18.0, left: 40.0),
+                  child: Row(
+                    children: const [
+                      Text("•  Fiber",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -104,7 +116,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Niacin",
+                      Text("•  Magnesium",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -116,7 +128,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Vitamin A",
+                      Text("•  Vitamin C",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -128,7 +140,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Vitamin E",
+                      Text("•  Vitamin K",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -140,7 +152,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Calcium",
+                      Text("•  Zinc",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -152,7 +164,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                   padding: const EdgeInsets.only(top: 18.0, left: 40.0),
                   child: Row(
                     children: const [
-                      Text("•  Carbohydrates",
+                      Text("•  Phosphorous",
                           style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
@@ -164,7 +176,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                   padding: const EdgeInsets.only(top: 54.0, left: 40.0),
                   child: Row(
                     children: [
-                      const Text("\$ 260 Per/ kg",
+                      const Text("\$ 160 Per/ kg",
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
@@ -227,7 +239,8 @@ class _DetailScreenState extends State<Detailanjeer> {
                 IconButton(
                     onPressed: () {
                       setState(() {
-                        Navigator.pop(context);
+                        Navigator.pop(
+                            context);
                       });
                     },
                     icon: const Icon(Icons.arrow_back_ios_new)),

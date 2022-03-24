@@ -8,11 +8,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fruitmarket2/keyboard.dart';
-import 'package:fruitmarket2/page_1.dart';
-import 'package:fruitmarket2/page_3.dart';
-import 'package:fruitmarket2/page_5.dart';
-import 'package:fruitmarket2/page_6.dart';
+import 'package:fruitmarket2/constants/keyboard.dart';
+import 'package:fruitmarket2/login/page_1.dart';
+import 'package:fruitmarket2/login/page_5.dart';
 
 
 class page_4 extends StatelessWidget

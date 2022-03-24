@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/page_1.dart';
+import 'package:fruitmarket2/login/page_1.dart';
 
-import 'fav/favourites_main.dart';
-import 'help_main/help_main.dart';
-import 'orders/my_orders_main.dart';
+import '../fav/favourites_main.dart';
+import '../help_main/help_main.dart';
+import '../orders/my_orders_main.dart';
 
 class Account extends StatelessWidget {
   const Account({Key? key}) : super(key: key);
