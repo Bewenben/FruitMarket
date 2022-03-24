@@ -62,7 +62,7 @@ class Intro3 extends StatelessWidget {
           const SizedBox(height: 100),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushReplacement(
+              Navigator.push(
                   context,
                   MaterialPageRoute(builder:(context) => const page_1())
               );

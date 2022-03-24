@@ -57,7 +57,7 @@ class page_6 extends StatelessWidget {
                     padding: EdgeInsets.only(top: height5 * 0.05),
                     child: InkWell(
                       onTap: () {
-                        Navigator.push(context,
+                        Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) => const Bottomnavbar()));
                       },
                       child: Container(

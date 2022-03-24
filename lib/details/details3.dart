@@ -188,7 +188,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                                     padding: EdgeInsets.only(left: 4.0),
                                     child: Text('Buy Now',
                                         style: TextStyle(
-                                            fontFamily: 'Roboto',
+                                            fontFamily: 'Poppins',
                                             fontWeight: FontWeight.w500,
                                             fontSize: 16)),
                                   ),
@@ -227,10 +227,7 @@ class _DetailScreenState extends State<Detailanjeer> {
                 IconButton(
                     onPressed: () {
                       setState(() {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Menupage()));
+                        Navigator.pop(context);
                       });
                     },
                     icon: const Icon(Icons.arrow_back_ios_new)),

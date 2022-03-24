@@ -55,7 +55,7 @@ class _SelectedCategoryState extends State<Organicvegetables> {
           height: 225,
           width: double.infinity,
           child: ListView.builder(
-            itemCount: gridorganicvegetables.length,
+              itemCount: gridorganicvegetables.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) => Padding(
                     padding: const EdgeInsets.only(
@@ -198,7 +198,7 @@ class _SelectedCategoryState extends State<Organicvegetables> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(
-                                    top: 8.0, right: 24.0),
+                                    top: 4.0, right: 24.0),
                                 child: Text(gridorganicvegetables[index].value,
                                     style: const TextStyle(
                                         fontSize: 12,

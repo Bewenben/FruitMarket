@@ -111,7 +111,7 @@ class page_3 extends StatelessWidget {
           padding: const EdgeInsets.only(top: 8.0),
           child: InkWell(
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=> page_4()));
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> page_4()));
             },
             child: Container(
               height: height2*.1,
@@ -252,7 +252,7 @@ class page_3 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: (){
-                               Navigator.push(context, MaterialPageRoute(builder: (context)=> page_4()));
+                               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> page_4()));
                                },
 
 

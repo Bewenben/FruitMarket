@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../constants/constant.dart';
 import '../../../constants/fruits.dart';
 import '../../../details/details1.dart';
+
 class Organicfruits extends StatefulWidget {
   const Organicfruits({Key? key}) : super(key: key);
 
@@ -193,7 +194,7 @@ class _SelectedCategoryState extends State<Organicfruits> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(
-                                    top: 8.0, right: 24.0),
+                                    top: 4.0, right: 24.0),
                                 child: Text(gridorganicfruits[index].value,
                                     style: const TextStyle(
                                         fontSize: 12,

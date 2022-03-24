@@ -36,12 +36,12 @@ class _MenupageState extends State<Menupage> {
     return AppBar(
       backgroundColor: mPrimaryColor,
       elevation: 0,
-      leadingWidth: 300,
+      leadingWidth: 350,
       leading: Padding(
-        padding: const EdgeInsets.only(left: 20.0),
+        padding: const EdgeInsets.only(left: 15.0),
         child: SizedBox(
-            height: 300,
-            width: 300,
+            height: 320,
+            width: 320,
             child: Row(
               children: const [
                 Text("F",

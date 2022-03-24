@@ -195,7 +195,7 @@ class _SelectedCategoryState extends State<Dehiscentfruits> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(
-                                    top: 8.0, right: 24.0),
+                                    top: 4.0, right: 24.0),
                                 child: Text(griddehiscentdryfruit[index].value,
                                     style: const TextStyle(
                                         fontSize: 12,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:fruitmarket2/constants/category.dart';
 import 'package:fruitmarket2/constants/constant.dart';
 import 'package:fruitmarket2/home/home.dart';
-import 'package:fruitmarket2/home/menupage.dart';
 
 
 int currentSelect = 1;

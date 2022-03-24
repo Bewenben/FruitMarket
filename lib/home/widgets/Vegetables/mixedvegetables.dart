@@ -50,7 +50,7 @@ class _SelectedCategoryState extends State<Mixedvegetables> {
           ),
         ),
         SizedBox(
-          height: 225,
+          height: 250,
           width: double.infinity,
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -159,11 +159,15 @@ class _SelectedCategoryState extends State<Mixedvegetables> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(top: 8.0),
-                                child: Text(gridmixedvegetables[index].name,
-                                    style: const TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w600,
-                                        fontFamily: "Poppins")),
+                                child: SizedBox(
+                                  width: 120,
+                                  child: Text(gridmixedvegetables[index].name,
+                                      maxLines: 2,
+                                      style: const TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w600,
+                                          fontFamily: "Poppins")),
+                                ),
                               ),
                             ],
                           ),

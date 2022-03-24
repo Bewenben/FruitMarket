@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fruitmarket2/fav/favourites.dart';
-import 'package:fruitmarket2/home/menupage.dart';
-
 import '../constants/constant.dart';
 
 class FavouritesScreen extends StatefulWidget {
@@ -27,20 +25,12 @@ class _FavouritesScreenState extends State<FavouritesScreen> {
     return AppBar(
       backgroundColor: mPrimaryColor,
       elevation: 0,
-      title: const Text(
-        "Favourites",
-        style: TextStyle(color: Colors.white, fontSize: 20),
-      ),
-      leading: Row(
-        children: [
-          IconButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const Menupage(); //temporarily goes back to my orders screen
-                }));
-              },
-              icon: const Icon(Icons.arrow_back_ios_rounded)),
-        ],
+      leadingWidth: 300,
+      leading: const Center(
+        child: Text(
+          "Favourites",
+          style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
       ),
     );
   }

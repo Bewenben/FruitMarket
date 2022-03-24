@@ -9,9 +9,14 @@ import 'page_2.dart';
 const green = Color(0xff69a03a);
 const gray = Color(0xffEFEFEF);
 
-class page_1 extends StatelessWidget {
+class page_1 extends StatefulWidget {
   const page_1({Key? key}) : super(key: key);
 
+  @override
+  State<page_1> createState() => _page_1State();
+}
+
+class _page_1State extends State<page_1> {
   @override
   Widget build(BuildContext context) {
     double height=MediaQuery.of(context).size.height;
@@ -89,7 +94,7 @@ class page_1 extends StatelessWidget {
                         ),
                         child: InkWell(
                           onTap: (){
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const Bottomnavbar()));
+                            Navigator.push(context, MaterialPageRoute(builder:(context) => const Bottomnavbar()));
                           },
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -111,7 +116,7 @@ class page_1 extends StatelessWidget {
                         ),
                         child: InkWell(
                           onTap: (){
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder:(context) => const Bottomnavbar()));
+                            Navigator.push(context, MaterialPageRoute(builder:(context) => const Bottomnavbar()));
                           },
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -128,8 +133,6 @@ class page_1 extends StatelessWidget {
 
             ]));
   }
-
-
 }
 
 
