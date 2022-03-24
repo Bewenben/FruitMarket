@@ -76,7 +76,7 @@ class Intro2 extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 100),
+          const SizedBox(height: 50),
           ElevatedButton(
             onPressed: () {
               Navigator.pushReplacement(
@@ -98,7 +98,7 @@ class Intro2 extends StatelessWidget {
               fontSize: 17,
             ),),
           ),
-          const SizedBox(height: 70),
+          const SizedBox(height: 40),
         ],
       ),
     );

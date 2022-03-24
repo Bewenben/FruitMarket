@@ -29,12 +29,12 @@ class _page_2State extends State<page_2> {
         //crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(top: height * .1),
+            padding: EdgeInsets.only(top: height * .1, left: 55),
             child: Row(children: [
               Container(
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(50))),
-                width: width * .18,
+                width: width * .14,
                 child: TextField(
                     onChanged: (value) {
                       if (value.length == 3) {
@@ -55,7 +55,7 @@ class _page_2State extends State<page_2> {
               Container(
                 decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(50))),
-                width: width * .8,
+                width: width * .6,
                 child: TextField(
                     readOnly: true,
                     showCursor: true,
@@ -73,33 +73,52 @@ class _page_2State extends State<page_2> {
             padding: const EdgeInsets.only(top: 15.0),
             child: InkWell(
               onTap: () {
-                showDialog(
-                    context: context,
-                    builder: (BuildContext) {
-                      return AlertDialog(
-                        title: const Text("notice"),
-                        content: Text("Your number is " +
-                            txtctr.text +
-                            txtctr2.text +
-                            " Are you sure you want to proceed"),
-                        actions: [
-                          TextButton(
-                              child: const Text("Yes"),
-                              onPressed: () {
-                                Navigator.pop(context);
-                                Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => page_3()));
-                              }),
-                          TextButton(
-                              child: const Text("No"),
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              })
-                        ],
-                      );
-                    });
+                if (txtctr.text != "" && txtctr2.text != "") {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext) {
+                        return AlertDialog(
+                          title: const Text("Notice"),
+                          content: Text("Your number is " +
+                              txtctr.text +
+                              txtctr2.text +
+                              " Are you sure you want to proceed"),
+                          actions: [
+                            TextButton(
+                                child: const Text("Yes"),
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                  Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => page_3()));
+                                }),
+                            TextButton(
+                                child: const Text("No"),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                })
+                          ],
+                        );
+                      });
+                } else {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext) {
+                        return AlertDialog(
+                          title: const Text("Error"),
+                          content: Text("Your number is not correct, " +
+                              "Please enter your number correctly."),
+                          actions: [
+                            TextButton(
+                                child: const Text("Ok"),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                })
+                          ],
+                        );
+                      });
+                }
               },
               child: Container(
                 height: height * .1,
@@ -122,7 +141,7 @@ class _page_2State extends State<page_2> {
             width: width * .81,
             child: GridView.count(
               crossAxisCount: 3,
-              mainAxisSpacing: 30,
+              mainAxisSpacing: 20,
               crossAxisSpacing: 30,
               children: List.generate(list.length, (index) {
                 if (index == 9) {
@@ -213,33 +232,53 @@ class _page_2State extends State<page_2> {
                     ),
                     child: InkWell(
                       onTap: () {
-                        showDialog(
-                            context: context,
-                            builder: (BuildContext) {
-                              return AlertDialog(
-                                title: const Text("notice"),
-                                content: Text("Your number is " +
-                                    txtctr.text +
-                                    txtctr2.text +
-                                    " Are you sure you want to proceed"),
-                                actions: [
-                                  TextButton(
-                                      child: const Text("Yes"),
-                                      onPressed: () {
-                                        Navigator.pushReplacement(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    page_3()));
-                                      }),
-                                  TextButton(
-                                      child: const Text("No"),
-                                      onPressed: () {
-                                        Navigator.of(context).pop();
-                                      })
-                                ],
-                              );
-                            });
+                        if (txtctr.text != "" && txtctr2.text != "") {
+                          showDialog(
+                              context: context,
+                              builder: (BuildContext) {
+                                return AlertDialog(
+                                  title: const Text("Notice"),
+                                  content: Text("Your number is " +
+                                      txtctr.text +
+                                      txtctr2.text +
+                                      " Are you sure you want to proceed"),
+                                  actions: [
+                                    TextButton(
+                                        child: const Text("Yes"),
+                                        onPressed: () {
+                                          Navigator.pop(context);
+                                          Navigator.pushReplacement(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      page_3()));
+                                        }),
+                                    TextButton(
+                                        child: const Text("No"),
+                                        onPressed: () {
+                                          Navigator.of(context).pop();
+                                        })
+                                  ],
+                                );
+                              });
+                        } else {
+                          showDialog(
+                              context: context,
+                              builder: (BuildContext) {
+                                return AlertDialog(
+                                  title: const Text("Error"),
+                                  content: Text("Your number is not correct, " +
+                                      "Please enter your number correctly."),
+                                  actions: [
+                                    TextButton(
+                                        child: const Text("Ok"),
+                                        onPressed: () {
+                                          Navigator.of(context).pop();
+                                        })
+                                  ],
+                                );
+                              });
+                        }
                       },
                       child: Container(
                         height: height * 0.18,

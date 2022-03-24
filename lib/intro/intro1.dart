@@ -18,35 +18,45 @@ class Intro1 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           InkWell(
-            onTap: (){
-              Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder:(context) => const page_1())
-              );
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => const page_1()));
             },
             child: const Padding(
               padding: EdgeInsets.only(right: 20),
               child: Align(
                 alignment: Alignment.topRight,
-                child: Text("Skip", style:TextStyle(
-                  color: Colors.grey,
-                  fontSize: 17,
-                )),
+                child: Text("Skip",
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 17,
+                    )),
               ),
             ),
           ),
           const SizedBox(height: 50),
-          Image.asset("images/page1.png", height: 300, width: 300, fit: BoxFit.fitWidth,),
+          Image.asset(
+            "images/page1.png",
+            height: 300,
+            width: 300,
+            fit: BoxFit.fitWidth,
+          ),
           const SizedBox(height: 20),
-          const Text("E Shopping",style: TextStyle(
-            color: Colors.black,
-            fontSize: 18,
-          ),),
+          const Text(
+            "E Shopping",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 18,
+            ),
+          ),
           const SizedBox(height: 20),
-          const Text("Explore top organic fruits & grab them",style: TextStyle(
-            color: Colors.grey,
-            fontSize: 16,
-          ),),
+          const Text(
+            "Explore top organic fruits & grab them",
+            style: TextStyle(
+              color: Colors.grey,
+              fontSize: 16,
+            ),
+          ),
           const SizedBox(height: 50),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -64,45 +74,48 @@ class Intro1 extends StatelessWidget {
                 height: 10,
                 width: 10,
                 decoration: BoxDecoration(
-                  color: const Color(0xffffffff),
-                  borderRadius: BorderRadius.circular(100),
-                  border: Border.all(color: const Color(0xff69A03A), width: 1)
-                ),
+                    color: const Color(0xffffffff),
+                    borderRadius: BorderRadius.circular(100),
+                    border:
+                        Border.all(color: const Color(0xff69A03A), width: 1)),
               ),
               Container(
                 height: 10,
                 width: 10,
                 decoration: BoxDecoration(
-                  color: const Color(0xffffffff),
-                  borderRadius: BorderRadius.circular(100),
-                  border: Border.all(color: const Color(0xff69A03A), width: 1)
-                ),
+                    color: const Color(0xffffffff),
+                    borderRadius: BorderRadius.circular(100),
+                    border:
+                        Border.all(color: const Color(0xff69A03A), width: 1)),
               ),
             ],
           ),
-          const SizedBox(height: 100),
+          const SizedBox(height: 40),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder:(context) => const Intro2())
-              );
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => const Intro2()));
             },
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(const Color(0xff69A03A)),
-              padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.symmetric(horizontal: 60, vertical: 15)),
+              backgroundColor:
+                  MaterialStateProperty.all<Color>(const Color(0xff69A03A)),
+              padding: MaterialStateProperty.all<EdgeInsets>(
+                  const EdgeInsets.symmetric(horizontal: 60, vertical: 15)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5),
                 ),
               ),
             ),
-            child: const Text("Next", style: TextStyle(
-              color: Colors.white,
-              fontSize: 17,
-            ),),
+            child: const Text(
+              "Next",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 17,
+              ),
+            ),
           ),
-          const SizedBox(height: 70),
+          const SizedBox(height: 50),
         ],
       ),
     );
