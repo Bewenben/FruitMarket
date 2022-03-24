@@ -1,22 +1,22 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'splash.dart';
+import 'package:task1/finalpage.dart';
+import 'package:task1/shoppingcartpage.dart';
+import 'cardpage.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const workshopapp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({Key? key}) : super(key: key);
+class workshopapp extends StatelessWidget {
+  const workshopapp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: "Poppins",
-      ),
-      home: Splash(),
-      title: "Fruit Market",
+      title: 'workshop app',
+      home: shoppingcart(),
     );
   }
 }
