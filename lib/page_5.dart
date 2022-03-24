@@ -1,36 +1,34 @@
-//import 'dart:js';
-
-
-import 'package:flutter/cupertino.dart';
 import 'dart:async';
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:fruitmarket2/keyboard.dart';
 import 'package:fruitmarket2/page_1.dart';
-import 'package:fruitmarket2/page_3.dart';
 import 'package:fruitmarket2/page_6.dart';
 
 
 
-class page_5 extends StatelessWidget
+class page_5 extends StatefulWidget
 {
   page_5({Key? key}) : super(key: key);
 
+  @override
+  State<page_5> createState() => _page_5State();
+}
+
+
+class _page_5State extends State<page_5> {
+  @override
+  void initState() {
+    Timer(const Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => page_6()));
+    }
+
+    );
+  }
   @override
   Widget build(BuildContext context) {
 
     double height5 = MediaQuery.of(context).size.height;
     double width5 = MediaQuery.of(context).size.width;
-
-    Timer(const Duration(seconds: 2), () {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => page_6()));
-    }
-
-    );
 
     return Scaffold(
         body: Padding(
@@ -54,4 +52,4 @@ class page_5 extends StatelessWidget
 
     );
   }
-  }
+}

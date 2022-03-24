@@ -1,11 +1,8 @@
-//import 'dart:js';
+
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:fruitmarket2/home/home.dart';
-import 'package:fruitmarket2/keyboard.dart';
 import 'package:fruitmarket2/page_1.dart';
-import 'package:fruitmarket2/page_3.dart';
 
 class page_6 extends StatelessWidget {
   page_6({Key? key}) : super(key: key);
@@ -61,7 +58,7 @@ class page_6 extends StatelessWidget {
                     child: InkWell(
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Bottomnavbar()));
+                            MaterialPageRoute(builder: (context) => const Bottomnavbar()));
                       },
                       child: Container(
                         height: height5 * .08,

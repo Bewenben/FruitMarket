@@ -26,7 +26,7 @@ class page_4 extends StatelessWidget
 
     Timer(const Duration(seconds: 5),()
     {
-      Navigator.push(context, MaterialPageRoute(builder: (context)=> page_5()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> page_5()));
     }
 
     );
