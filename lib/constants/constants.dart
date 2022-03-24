@@ -1,6 +1,6 @@
 
 
-import 'package:fruitmarket2/constants/item_classes.dart';
+import 'package:task1/constants/item_classes.dart';
 
 List <OrderItem> OrdersList = [
   OrderItem("Broccoli", "assets/images/broccli.png"),

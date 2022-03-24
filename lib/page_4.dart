@@ -3,13 +3,11 @@
 
 import 'package:flutter/cupertino.dart';
 import 'dart:async';
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:task1/login/page_1.dart';
-import 'package:task1/login/page_5.dart';
+import 'package:task1/page_5.dart';
+
+import 'login/page_1.dart';
+
 
 
 class page_4 extends StatelessWidget
@@ -49,7 +47,7 @@ class page_4 extends StatelessWidget
 
                 ),
               ),
-               Padding(
+              Padding(
                 padding: EdgeInsets.all(height4*.1),
                 child: const Text("Verifying Your Code..",style:TextStyle(color: Colors.black,fontSize: 22) ,),
               )

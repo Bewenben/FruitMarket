@@ -62,12 +62,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_svg",
-      "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-1.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter_test",
       "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -98,32 +92,32 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
-      "name": "path_drawing",
-      "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-1.0.0",
+      "name": "provider",
+      "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/provider-4.3.3",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "path_parsing",
-      "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-1.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "petitparser",
-      "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.4.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.7"
     },
     {
       "name": "sky_engine",
       "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/bin/cache/pkg/sky_engine",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "smooth_star_rating_null_safety",
+      "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/smooth_star_rating_null_safety-1.0.4+2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -176,19 +170,13 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "xml",
-      "rootUri": "file:///D:/Programs/IDE%20Programs/flutter/.pub-cache/hosted/pub.dartlang.org/xml-5.3.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
       "name": "task1",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-03-24T21:23:50.885728Z",
+  "generated": "2022-03-24T22:02:01.379972Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }

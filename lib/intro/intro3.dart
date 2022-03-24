@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:fruitmarket2/login/page_1.dart';
+
+import 'package:task1/login/page_1.dart';
 
 class Intro3 extends StatelessWidget {
   const Intro3({Key? key}) : super(key: key);

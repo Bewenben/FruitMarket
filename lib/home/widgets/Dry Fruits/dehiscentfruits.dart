@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/home/widgets/details/details3.dart';
+import 'package:task1/home/widgets/details/details3.dart';
 
 import '../../../constants/constant.dart';
 import '../../../constants/dryfruits.dart';

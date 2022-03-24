@@ -17,7 +17,7 @@ class buyerdetails extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(onPressed:(){
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const shoppingcart()));
+          Navigator.pop(context);
         } ,icon:Icon(Icons.arrow_back_ios_rounded), color: Colors.white,),
         backgroundColor: mBackgroundcolor,
         title: Text('Add your Card', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),

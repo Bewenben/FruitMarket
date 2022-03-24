@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/intro/intro1.dart';
-import 'package:fruitmarket2/intro/intro3.dart';
+import 'package:task1/intro/intro1.dart';
+import 'package:task1/intro/intro3.dart';
 
 
 class Splash extends StatefulWidget {

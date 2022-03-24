@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/constants.dart';
-import 'package:fruitmarket2/fav/favourites_main.dart';
 import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
+import 'package:task1/fav/favourites_main.dart';
+
+import '../constants/constant.dart';
 
 
 class Orders extends StatefulWidget {
@@ -53,11 +54,6 @@ class _OrdersState extends State<Orders> {
                                   ),
                                   IconButton(
                                       onPressed: () {
-                                        Navigator.push(context,
-                                            MaterialPageRoute(
-                                                builder: (context) {
-                                          return const FavouritesScreen(); //temporarily navigates to favourites screen
-                                        }));
                                       },
                                       icon: const Icon(Icons.navigate_next_rounded))
                                 ],

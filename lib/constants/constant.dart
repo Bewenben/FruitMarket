@@ -1,7 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/item_classes.dart';
+import 'package:task1/constants/item_classes.dart';
 
 Color mPrimaryColor = const Color(0xff69a03a);
 Color mSecondaryColor = const Color.fromRGBO(146, 146, 146, 1);

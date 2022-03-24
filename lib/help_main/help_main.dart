@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/notifications/notifications_main.dart';
+import 'package:task1/notifications/notifications_main.dart';
 
 import '../constants/constant.dart';
 

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
+import 'package:task1/shoppingcartpage.dart';
 
 import '../constants/constants.dart';
 import '../notifications/notifications_main.dart';
@@ -165,7 +166,7 @@ class _FavouritesState extends State<Favourites> {
                                         Navigator.push(context,
                                             MaterialPageRoute(
                                                 builder: (context) {
-                                          return const NotificationScreen(); //  Before: MyOrders();
+                                          return const shoppingcart(); //  Before: MyOrders();
                                         }));
                                       },
                                       style: ElevatedButton.styleFrom(

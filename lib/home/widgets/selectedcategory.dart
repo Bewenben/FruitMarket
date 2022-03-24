@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/home/widgets/Dry%20Fruits/dehiscentfruits.dart';
-import 'package:fruitmarket2/home/widgets/Dry%20Fruits/indehiscentfruit.dart';
-import 'package:fruitmarket2/home/widgets/Dry%20Fruits/kashmiri.dart';
-import 'package:fruitmarket2/home/widgets/Dry%20Fruits/mixeddryfruits.dart';
-import 'package:fruitmarket2/home/widgets/Fruits/melonfruits.dart';
-import 'package:fruitmarket2/home/widgets/Fruits/mixedfruits.dart';
-import 'package:fruitmarket2/home/widgets/Fruits/organicfruit.dart';
-import 'package:fruitmarket2/home/widgets/Fruits/stonefruits.dart';
-import 'package:fruitmarket2/home/widgets/Vegetables/alliumvegetables.dart';
-import 'package:fruitmarket2/home/widgets/Vegetables/mixedvegetables.dart';
-import 'package:fruitmarket2/home/widgets/Vegetables/rootvegetables.dart';
-import 'package:fruitmarket2/home/widgets/list.dart';
+import 'package:task1/home/widgets/Vegetables/alliumvegetables.dart';
+import 'package:task1/home/widgets/Vegetables/mixedvegetables.dart';
+import 'package:task1/home/widgets/list.dart';
+import 'Dry Fruits/dehiscentfruits.dart';
+import 'Dry Fruits/indehiscentfruit.dart';
+import 'Dry Fruits/kashmiri.dart';
+import 'Dry Fruits/mixeddryfruits.dart';
+import 'Fruits/melonfruits.dart';
+import 'Fruits/mixedfruits.dart';
+import 'Fruits/organicfruit.dart';
+import 'Fruits/stonefruits.dart';
 import 'Vegetables/organicvegetables.dart';
+import 'Vegetables/rootvegetables.dart';
 
 class SelectedCategory extends StatefulWidget {
   const SelectedCategory({Key? key}) : super(key: key);

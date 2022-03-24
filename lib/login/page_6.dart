@@ -1,8 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/home/home.dart';
-import 'package:fruitmarket2/login/page_1.dart';
+import 'package:task1/home/home.dart';
+import 'package:task1/login/page_1.dart';
 
 class page_6 extends StatelessWidget {
   page_6({Key? key}) : super(key: key);

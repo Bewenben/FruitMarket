@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/category.dart';
-import 'package:fruitmarket2/constants/constant.dart';
-import 'package:fruitmarket2/home/home.dart';
+import 'package:task1/home/home.dart';
+
+import '../../constants/category.dart';
+import '../../constants/constant.dart';
 
 
 int currentSelect = 1;

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/constant.dart';
-import 'package:fruitmarket2/constants/vegetables.dart';
+
+import '../../../constants/constant.dart';
+import '../../../constants/vegetables.dart';
 
 class Mixedvegetables extends StatefulWidget {
   const Mixedvegetables({Key? key}) : super(key: key);

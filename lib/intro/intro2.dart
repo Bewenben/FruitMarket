@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/login/page_1.dart';
 
+import '../login/page_1.dart';
 import 'intro3.dart';
 
 class Intro2 extends StatelessWidget {

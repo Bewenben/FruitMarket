@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:task1/home/home.dart';
 import 'package:task1/login/page_1.dart';
-import 'package:task1/login/page_6.dart';
 
 
 class page_5 extends StatefulWidget
@@ -18,7 +18,7 @@ class _page_5State extends State<page_5> {
   void initState() {
     Timer(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => page_6()));
+          MaterialPageRoute(builder: (context) => Bottomnavbar()));
     }
 
     );

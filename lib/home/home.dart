@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/account/account.dart';
-import 'package:fruitmarket2/constants/constant.dart';
-import 'package:fruitmarket2/fav/favourites_main.dart';
-import 'package:fruitmarket2/home/menupage.dart';
+import 'package:task1/account/account.dart';
+import 'package:task1/fav/favourites_main.dart';
+import 'package:task1/home/menupage.dart';
+import 'package:task1/shoppingcartpage.dart';
+
+import '../constants/constant.dart';
 
 class Bottomnavbar extends StatefulWidget {
   const Bottomnavbar({Key? key}) : super(key: key);
@@ -13,7 +15,7 @@ class Bottomnavbar extends StatefulWidget {
 
 class _BottomnavbarState extends State<Bottomnavbar> {
   final PageController _pageController = PageController();
-  final List<Widget> _screens = [const Menupage(), const FavouritesScreen(), const Account(), const Account()];
+  final List<Widget> _screens = [const Menupage(), const FavouritesScreen(), const shoppingcart(), const Account()];
 
   void _onPageChanged(int index) {
     setState(() {

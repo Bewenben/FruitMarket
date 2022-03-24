@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/fav/favourites.dart';
+import 'package:task1/fav/favourites.dart';
 import '../constants/constant.dart';
 
 class FavouritesScreen extends StatefulWidget {

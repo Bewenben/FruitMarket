@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:task1/finalpage.dart';
-import 'package:task1/shoppingcartpage.dart';
-import 'cardpage.dart';
+import 'package:task1/splash.dart';
 
 void main() {
   runApp(const workshopapp());
@@ -15,8 +13,11 @@ class workshopapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'workshop app',
-      home: shoppingcart(),
+      theme: ThemeData(
+        fontFamily: "Poppins"
+      ),
+      title: 'Fruit Market',
+      home: Splash(),
     );
   }
 }

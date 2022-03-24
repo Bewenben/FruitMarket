@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/dryfruits.dart';
 
 import '../../../constants/constant.dart';
+import '../../../constants/dryfruits.dart';
 class Kashmiri extends StatefulWidget {
   const Kashmiri({Key? key}) : super(key: key);
 

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:fruitmarket2/constants/keyboard.dart';
-import 'package:fruitmarket2/login/page_1.dart';
-import 'package:fruitmarket2/login/page_4.dart';
+import 'package:task1/constants/keyboard.dart';
+import 'package:task1/login/page_1.dart';
+import 'package:task1/login/page_4.dart';
 
 class page_3 extends StatelessWidget {
   page_3({Key? key}) : super(key: key);

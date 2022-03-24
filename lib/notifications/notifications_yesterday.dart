@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/constant.dart';
+
+import '../constants/constant.dart';
 
 class NotificationsYesterday extends StatelessWidget {
   const NotificationsYesterday({Key? key}) : super(key: key);

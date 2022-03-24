@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/vegetables.dart';
 
 import '../../../constants/constant.dart';
+import '../../../constants/vegetables.dart';
 
 class Alliumvegetables extends StatefulWidget {
   const Alliumvegetables({Key? key}) : super(key: key);

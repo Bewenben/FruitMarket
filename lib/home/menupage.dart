@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/constant.dart';
-import 'package:fruitmarket2/home/widgets/list.dart';
-import 'package:fruitmarket2/home/widgets/search.dart';
-import 'package:fruitmarket2/home/widgets/selectedcategory.dart';
-import 'package:fruitmarket2/notifications/notifications_main.dart';
+import 'package:task1/constants/constant.dart';
+import 'package:task1/home/widgets/list.dart';
+import 'package:task1/home/widgets/search.dart';
+import 'package:task1/home/widgets/selectedcategory.dart';
+
+import '../notifications/notifications_main.dart';
 
 class Menupage extends StatefulWidget {
   const Menupage({Key? key}) : super(key: key);

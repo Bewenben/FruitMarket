@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fruitmarket2/constants/constant.dart';
-import 'package:fruitmarket2/home/menupage.dart';
+
+import '../../../constants/constant.dart';
+
 
 
 class Detailbroccoli extends StatefulWidget {
