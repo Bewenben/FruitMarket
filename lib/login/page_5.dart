@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types, must_call_super
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:task1/login/page_1.dart';
@@ -6,7 +8,7 @@ import 'package:task1/login/page_6.dart';
 
 class page_5 extends StatefulWidget
 {
-  page_5({Key? key}) : super(key: key);
+  const page_5({Key? key}) : super(key: key);
 
   @override
   State<page_5> createState() => _page_5State();
@@ -18,7 +20,7 @@ class _page_5State extends State<page_5> {
   void initState() {
     Timer(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => page_6()));
+          MaterialPageRoute(builder: (context) => const page_6()));
     }
 
     );

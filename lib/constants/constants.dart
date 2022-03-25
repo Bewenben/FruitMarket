@@ -1,5 +1,7 @@
 
 
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:task1/constants/item_classes.dart';
 
 List <OrderItem> OrdersList = [

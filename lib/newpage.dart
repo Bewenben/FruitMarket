@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+// ignore_for_file: camel_case_types, deprecated_member_use
 
+import 'package:flutter/material.dart';
 import 'constants/constantdata.dart';
 
 class secondpage extends StatefulWidget {
@@ -15,34 +15,34 @@ class _secondpageState extends State<secondpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back_ios_rounded),
+        leading: const Icon(Icons.arrow_back_ios_rounded),
         backgroundColor: mBackgroundcolor,
-        title: Text('Shopping Cart', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+        title: const Text('Shopping Cart', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: 5,),
+          const SizedBox(height: 5,),
           Row(
               children: [
-                SizedBox(width: 5,),
-                Icon(Icons.location_pin,size: 20,),
-                SizedBox(width: 10,),
-                Text("440001 Nagpur,Maharashtra", style: TextStyle(fontSize: 14),),
-                SizedBox(width: 10,),
-                Icon(Icons.arrow_downward,size: 20,),
+                const SizedBox(width: 5,),
+                const Icon(Icons.location_pin,size: 20,),
+                const SizedBox(width: 10,),
+                const Text("440001 Nagpur,Maharashtra", style: TextStyle(fontSize: 14),),
+                const SizedBox(width: 10,),
+                const Icon(Icons.arrow_downward,size: 20,),
                 Padding(
                   padding: const EdgeInsets.only(left: 20),
-                  child: TextButton(onPressed: (){},child: Text("Change Address", style: TextStyle(fontSize: 14,color: Colors.lightBlue),)),
+                  child: TextButton(onPressed: (){},child: const Text("Change Address", style: TextStyle(fontSize: 14,color: Colors.lightBlue),)),
                 ),
               ]
           ),
-          Container(
+          SizedBox(
             height: 500,
             width: 1000,
             child: ListView.separated(
                 separatorBuilder: (context, index) {
-                  return Divider(height: 6,thickness: 1,);
+                  return const Divider(height: 6,thickness: 1,);
                 },
                 shrinkWrap: true,
                 scrollDirection: Axis.vertical,
@@ -50,7 +50,7 @@ class _secondpageState extends State<secondpage> {
                 itemBuilder: (context,index){
                   return Row(
                     children: [
-                      SizedBox(width: 10,),
+                      const SizedBox(width: 10,),
                       Container(
                         height: 150,
                         width: 100,
@@ -63,11 +63,11 @@ class _secondpageState extends State<secondpage> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(foodinfos[index].name,style: TextStyle(fontSize: 15),),
-                            SizedBox(height: 5,),
-                            Text(foodinfos[index].prevprice,style: TextStyle(decoration: TextDecoration.lineThrough,fontSize: 15,color: Colors.grey),),
-                            SizedBox(height: 5,),
-                            Text(foodinfos[index].newprice,style: TextStyle(fontSize: 15),),
+                            Text(foodinfos[index].name,style: const TextStyle(fontSize: 15),),
+                            const SizedBox(height: 5,),
+                            Text(foodinfos[index].prevprice,style: const TextStyle(decoration: TextDecoration.lineThrough,fontSize: 15,color: Colors.grey),),
+                            const SizedBox(height: 5,),
+                            Text(foodinfos[index].newprice,style: const TextStyle(fontSize: 15),),
                           ],
                         ),
                       ),
@@ -78,14 +78,14 @@ class _secondpageState extends State<secondpage> {
                             padding: const EdgeInsets.only(left: 150,top: 20),
                             child: IconButton(onPressed: (){
                               foodinfos.remove(foodinfos[index]);
-                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> secondpage()));
-                            }, icon: Icon(Icons.restore_from_trash_outlined)),
+                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const secondpage()));
+                            }, icon: const Icon(Icons.restore_from_trash_outlined)),
                           ),
-                          SizedBox(height: 40,width: 1,),
+                          const SizedBox(height: 40,width: 1,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              SizedBox(width: 70,),
+                              const SizedBox(width: 70,),
                               ButtonTheme(
                                   minWidth: 10,
                                   height: 35,
@@ -94,20 +94,20 @@ class _secondpageState extends State<secondpage> {
                                       foodinfos[index].counts--;
                                     }
                                   });}
-                                    ,elevation: 0,color: Colors.white,child: Text("-", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black,width: 0.8),borderRadius: BorderRadius.circular(10)),)
+                                    ,elevation: 0,color: Colors.white,child: const Text("-", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),shape: RoundedRectangleBorder(side: const BorderSide(color: Colors.black,width: 0.8),borderRadius: BorderRadius.circular(10)),)
                               ),
-                              SizedBox(width: 5,),
+                              const SizedBox(width: 5,),
                               Text("${foodinfos[index].counts}"),
-                              SizedBox(width: 5,),
+                              const SizedBox(width: 5,),
                               ButtonTheme(
                                   minWidth: 10,
                                   height: 35,
                                   child: RaisedButton(onPressed: (){setState(() {
                                     foodinfos[index].counts++;
                                   });}
-                                    ,elevation: 0,color: Colors.white,child: Text("+", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black,width: 0.8),borderRadius: BorderRadius.circular(10)),)
+                                    ,elevation: 0,color: Colors.white,child: const Text("+", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),shape: RoundedRectangleBorder(side: const BorderSide(color: Colors.black,width: 0.8),borderRadius: BorderRadius.circular(10)),)
                               ),
-                              SizedBox(width: 5,),
+                              const SizedBox(width: 5,),
                             ],
                           ),
                         ],
@@ -116,20 +116,20 @@ class _secondpageState extends State<secondpage> {
                   );
                 }),
           ),
-          SizedBox(height: 50,),
+          const SizedBox(height: 50,),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(width: 10,),
-              Text("Total-",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-              SizedBox(width: 5,),
-              Text("RS",style: TextStyle(fontSize: 20),),
-              Text("${(foodinfos[0].price*foodinfos[0].counts) + (foodinfos[1].price*foodinfos[1].counts) + (foodinfos[2].price*foodinfos[2].counts)}",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-              SizedBox(width: 140,),
+              const SizedBox(width: 10,),
+              const Text("Total-",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+              const SizedBox(width: 5,),
+              const Text("RS",style: TextStyle(fontSize: 20),),
+              Text("${(foodinfos[0].price*foodinfos[0].counts) + (foodinfos[1].price*foodinfos[1].counts) + (foodinfos[2].price*foodinfos[2].counts)}",style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+              const SizedBox(width: 140,),
               ButtonTheme(
                   minWidth: 100,
                   height: 40,
-                  child: RaisedButton(onPressed: (){} ,elevation: 0,color: mBackgroundcolor,child: Text("Place Order" ,style: TextStyle(color: Colors.white,fontSize: 15,),),shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black.withOpacity(.2)),borderRadius: BorderRadius.circular(5)),)
+                  child: RaisedButton(onPressed: (){} ,elevation: 0,color: mBackgroundcolor,child: const Text("Place Order" ,style: TextStyle(color: Colors.white,fontSize: 15,),),shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black.withOpacity(.2)),borderRadius: BorderRadius.circular(5)),)
               ),
             ],
           )

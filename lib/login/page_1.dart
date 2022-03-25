@@ -1,5 +1,7 @@
 //import 'dart:html';
 
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:task1/home/home.dart';
 import 'page_2.dart';
@@ -45,7 +47,7 @@ class _page_1State extends State<page_1> {
         child: InkWell(
           onTap: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => page_2()));
+                context, MaterialPageRoute(builder: (context) => const page_2()));
           },
           child: Container(
             height: height * .1,
@@ -55,12 +57,12 @@ class _page_1State extends State<page_1> {
               border: Border.all(color: Colors.black),
               borderRadius: const BorderRadius.all(Radius.circular(20)),
             ),
-            child: Center(
+            child: const Center(
                 child: Padding(
-              padding: const EdgeInsets.only(left: 20.0),
+              padding: EdgeInsets.only(left: 20.0),
               child: Text(
                 "Click Here To Enter Your Mobile Number..",
-                style: const TextStyle(color: Colors.black, fontSize: 18),
+                style: TextStyle(color: Colors.black, fontSize: 18),
               ),
             )),
           ),

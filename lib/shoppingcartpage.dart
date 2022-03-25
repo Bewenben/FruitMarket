@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: camel_case_types, deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:task1/cardpage.dart';
 
@@ -17,8 +18,8 @@ class _shoppingcartState extends State<shoppingcart> {
     return Scaffold(
       appBar: AppBar(
         leadingWidth: 350,
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 8.0),
+        leading: const Padding(
+          padding: EdgeInsets.only(left: 8.0),
           child: Center(
             child: Text(
               'Shopping Cart',
@@ -33,28 +34,28 @@ class _shoppingcartState extends State<shoppingcart> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Row(children: [
-              SizedBox(
+              const SizedBox(
                 width: 5,
               ),
-              Icon(
+              const Icon(
                 Icons.location_pin,
                 size: 20,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              Text(
+              const Text(
                 "440001 Nagpur,Maharashtra",
                 style: TextStyle(fontSize: 14),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 5,
               ),
-              Icon(
+              const Icon(
                 Icons.arrow_downward,
                 size: 20,
               ),
@@ -62,30 +63,30 @@ class _shoppingcartState extends State<shoppingcart> {
                 padding: const EdgeInsets.only(left: 10),
                 child: TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "Change Address",
                       style: TextStyle(fontSize: 14, color: Colors.lightBlue),
                     )),
               ),
             ]),
-            Container(
+            SizedBox(
               height: 500,
               width: 1000,
               child: ListView.separated(
                   separatorBuilder: (context, index) {
-                    return Divider(
+                    return const Divider(
                       height: 6,
                       thickness: 1,
                     );
                   },
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   // scrollDirection: Axis.horizontal,
                   itemCount: foodinfos.length,
                   itemBuilder: (context, index) {
                     return Row(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Container(
@@ -103,24 +104,24 @@ class _shoppingcartState extends State<shoppingcart> {
                             children: [
                               Text(
                                 foodinfos[index].name,
-                                style: TextStyle(fontSize: 15),
+                                style: const TextStyle(fontSize: 15),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Text(
                                 foodinfos[index].prevprice,
-                                style: TextStyle(
+                                style: const TextStyle(
                                     decoration: TextDecoration.lineThrough,
                                     fontSize: 15,
                                     color: Colors.grey),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Text(
                                 foodinfos[index].newprice,
-                                style: TextStyle(fontSize: 15),
+                                style: const TextStyle(fontSize: 15),
                               ),
                             ],
                           ),
@@ -136,16 +137,16 @@ class _shoppingcartState extends State<shoppingcart> {
                                     foodinfos.remove(foodinfos[index]);
                                   },
                                   icon:
-                                      Icon(Icons.restore_from_trash_outlined)),
+                                      const Icon(Icons.restore_from_trash_outlined)),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 40,
                               width: 1,
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
-                                SizedBox(
+                                const SizedBox(
                                   width: 70,
                                 ),
                                 ButtonTheme(
@@ -161,23 +162,23 @@ class _shoppingcartState extends State<shoppingcart> {
                                       },
                                       elevation: 0,
                                       color: Colors.white,
-                                      child: Text(
+                                      child: const Text(
                                         "-",
                                         style: TextStyle(
                                             fontSize: 15,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       shape: RoundedRectangleBorder(
-                                          side: BorderSide(
+                                          side: const BorderSide(
                                               color: Colors.black, width: 0.8),
                                           borderRadius:
                                               BorderRadius.circular(10)),
                                     )),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
                                 Text("${foodinfos[index].counts}"),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
                                 ButtonTheme(
@@ -191,19 +192,19 @@ class _shoppingcartState extends State<shoppingcart> {
                                       },
                                       elevation: 0,
                                       color: Colors.white,
-                                      child: Text(
+                                      child: const Text(
                                         "+",
                                         style: TextStyle(
                                             fontSize: 15,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       shape: RoundedRectangleBorder(
-                                          side: BorderSide(
+                                          side: const BorderSide(
                                               color: Colors.black, width: 0.8),
                                           borderRadius:
                                               BorderRadius.circular(10)),
                                     )),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
                               ],
@@ -214,31 +215,31 @@ class _shoppingcartState extends State<shoppingcart> {
                     );
                   }),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
-                Text(
+                const Text(
                   "Total-",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 5,
                 ),
-                Text(
+                const Text(
                   "RS",
                   style: TextStyle(fontSize: 20),
                 ),
                 Text(
                   "${(foodinfos[0].price * foodinfos[0].counts) + (foodinfos[1].price * foodinfos[1].counts) + (foodinfos[2].price * foodinfos[2].counts)}",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 140,
                 ),
                 ButtonTheme(
@@ -253,7 +254,7 @@ class _shoppingcartState extends State<shoppingcart> {
                       },
                       elevation: 0,
                       color: mBackgroundcolor,
-                      child: Text(
+                      child: const Text(
                         "Place Order",
                         style: TextStyle(
                           color: Colors.white,
@@ -266,7 +267,7 @@ class _shoppingcartState extends State<shoppingcart> {
                     )),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
           ],

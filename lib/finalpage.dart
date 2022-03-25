@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: camel_case_types, unused_local_variable, unnecessary_string_interpolations, deprecated_member_use
+
 import 'package:flutter/material.dart';
-import 'package:task1/cardpage.dart';
 import 'package:task1/page_4.dart';
 
 import 'constants/constantdata.dart';
@@ -23,13 +23,13 @@ class _paymentpageState extends State<paymentpage> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_back_ios_rounded),
+          icon: const Icon(Icons.arrow_back_ios_rounded),
           color: Colors.black,
         ),
         backgroundColor: Colors.white,
         title: Text(
           'Total Bill: ${(foodinfos[0].price * foodinfos[0].counts) + (foodinfos[1].price * foodinfos[1].counts) + (foodinfos[2].price * foodinfos[2].counts)} RS ',
-          style: TextStyle(fontSize: 20, color: Colors.black),
+          style: const TextStyle(fontSize: 20, color: Colors.black),
         ),
       ),
       body: SingleChildScrollView(
@@ -38,20 +38,20 @@ class _paymentpageState extends State<paymentpage> {
           children: [
             Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 30,
                 ),
-                Icon(
+                const Icon(
                   Icons.storefront_sharp,
                   size: 30,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 Column(
-                  children: [
+                  children: const [
                     Padding(
-                      padding: const EdgeInsets.only(right: 30),
+                      padding: EdgeInsets.only(right: 30),
                       child: Text(
                         'Organic Fruit Shop',
                         style: TextStyle(fontSize: 20),
@@ -65,26 +65,26 @@ class _paymentpageState extends State<paymentpage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 34,
                 ),
-                Icon(
+                const Icon(
                   Icons.pin_drop_sharp,
                   size: 30,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 Column(
-                  children: [
+                  children: const [
                     Padding(
-                      padding: const EdgeInsets.only(right: 100),
+                      padding: EdgeInsets.only(right: 100),
                       child: Text(
                         'Home Address',
                         style: TextStyle(fontSize: 20),
@@ -108,7 +108,7 @@ class _paymentpageState extends State<paymentpage> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -116,19 +116,19 @@ class _paymentpageState extends State<paymentpage> {
               width: 350,
               color: Colors.grey.shade300,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 30),
+                const Padding(
+                  padding: EdgeInsets.only(left: 30),
                   child: Text(
                     'Credit/Debit Cards',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 40,
                 ),
                 TextButton(
@@ -142,41 +142,41 @@ class _paymentpageState extends State<paymentpage> {
                     )),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 30,
                 ),
-                Icon(
+                const Icon(
                   Icons.credit_card,
                   size: 30,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 05,
                 ),
                 Column(
                   children: [
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           '************',
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           "${holderinfos[0].no4}",
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 3,
                     ),
-                    Text(
+                    const Text(
                       'Manish Chutake',
                       style: TextStyle(fontSize: 15, color: Colors.grey),
                     ),
@@ -184,7 +184,7 @@ class _paymentpageState extends State<paymentpage> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -192,11 +192,11 @@ class _paymentpageState extends State<paymentpage> {
               width: 350,
               color: Colors.grey.shade300,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 5, bottom: 8, right: 180),
+            const Padding(
+              padding: EdgeInsets.only(top: 5, bottom: 8, right: 180),
               child: Text(
                 'Save and Pay via cards',
                 style: TextStyle(fontSize: 15, color: Colors.grey),
@@ -210,14 +210,14 @@ class _paymentpageState extends State<paymentpage> {
                     "assets/iconfinder__Mas@4x.png",
                     scale: 3,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 15,
                   ),
                   Image.asset(
                     "assets/Group 2785@4x.png",
                     scale: 3,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 15,
                   ),
                   Image.asset(
@@ -227,17 +227,17 @@ class _paymentpageState extends State<paymentpage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 205),
+            const Padding(
+              padding: EdgeInsets.only(right: 205),
               child: Text(
                 'Wallet Method',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Row(
@@ -249,16 +249,16 @@ class _paymentpageState extends State<paymentpage> {
                     scale: 4,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
-                Text(
+                const Text(
                   'Phone Pay',
                   style: TextStyle(fontSize: 15, color: Colors.black),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -266,7 +266,7 @@ class _paymentpageState extends State<paymentpage> {
               width: 350,
               color: Colors.grey.shade300,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -278,16 +278,16 @@ class _paymentpageState extends State<paymentpage> {
                     scale: 4,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
-                Text(
+                const Text(
                   'Google Pay',
                   style: TextStyle(fontSize: 15, color: Colors.black),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -295,7 +295,7 @@ class _paymentpageState extends State<paymentpage> {
               width: 350,
               color: Colors.grey.shade300,
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -307,16 +307,16 @@ class _paymentpageState extends State<paymentpage> {
                     scale: 4,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
-                Text(
+                const Text(
                   'Pay Pal',
                   style: TextStyle(fontSize: 15, color: Colors.black),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ButtonTheme(
@@ -325,12 +325,12 @@ class _paymentpageState extends State<paymentpage> {
               child: RaisedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => page_4()));
+                      MaterialPageRoute(builder: (context) => const page_4()));
                 },
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
                 color: mBackgroundcolor,
-                child: Text(
+                child: const Text(
                   "PAY NOW",
                   style: TextStyle(
                     color: Colors.white,

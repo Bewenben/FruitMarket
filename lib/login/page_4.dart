@@ -1,20 +1,18 @@
 //import 'dart:js';
 
 
-import 'package:flutter/cupertino.dart';
-import 'dart:async';
+// ignore_for_file: camel_case_types
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/cupertino.dart';
+import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:task1/login/page_1.dart';
 import 'package:task1/login/page_5.dart';
 
 
 class page_4 extends StatelessWidget
 {
-  page_4({Key? key}) : super(key: key);
+  const page_4({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +21,7 @@ class page_4 extends StatelessWidget
 
     Timer(const Duration(seconds: 5),()
     {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> page_5()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const page_5()));
     }
 
     );
@@ -49,7 +47,7 @@ class page_4 extends StatelessWidget
 
                 ),
               ),
-               Padding(
+              Padding(
                 padding: EdgeInsets.all(height4*.1),
                 child: const Text("Verifying Your Code..",style:TextStyle(color: Colors.black,fontSize: 22) ,),
               )

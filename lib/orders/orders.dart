@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
-import 'package:task1/fav/favourites_main.dart';
-
 import '../constants/constant.dart';
 
 

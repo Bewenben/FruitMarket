@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:task1/constants/keyboard.dart';
 import 'package:task1/login/page_1.dart';
@@ -28,7 +30,7 @@ class page_3 extends StatelessWidget {
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 18.0),
+            padding: const EdgeInsets.only(top: 18.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -92,7 +94,7 @@ class page_3 extends StatelessWidget {
             child: InkWell(
               onTap: () {
                 Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (context) => page_4()));
+                    context, MaterialPageRoute(builder: (context) => const page_4()));
               },
               child: Container(
                 height: height2 * .1,
@@ -217,7 +219,7 @@ class page_3 extends StatelessWidget {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => page_4()));
+                                  builder: (context) => const page_4()));
                         },
                         child: Container(
                           height: height2 * 0.1,

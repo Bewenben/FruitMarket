@@ -1,11 +1,13 @@
 
 
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:task1/home/home.dart';
 import 'package:task1/login/page_1.dart';
 
 class page_6 extends StatelessWidget {
-  page_6({Key? key}) : super(key: key);
+  const page_6({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

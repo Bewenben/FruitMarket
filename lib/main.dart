@@ -1,4 +1,6 @@
 
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:task1/splash.dart';
 
@@ -17,7 +19,7 @@ class workshopapp extends StatelessWidget {
         fontFamily: "Poppins"
       ),
       title: 'Fruit Market',
-      home: Splash(),
+      home: const Splash(),
     );
   }
 }

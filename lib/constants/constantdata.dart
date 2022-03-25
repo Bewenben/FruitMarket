@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'dart:ui';
 
 Color mBackgroundcolor = const Color(0xff69a03a);

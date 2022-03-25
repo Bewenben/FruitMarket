@@ -1,5 +1,7 @@
 //import 'dart:html';
 
+// ignore_for_file: camel_case_types, avoid_types_as_parameter_names, non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:task1/login/page_1.dart';
@@ -8,7 +10,7 @@ import 'package:task1/login/page_3.dart';
 import '../constants/keyboard.dart';
 
 class page_2 extends StatefulWidget {
-  page_2({Key? key}) : super(key: key);
+  const page_2({Key? key}) : super(key: key);
 
   @override
   State<page_2> createState() => _page_2State();
@@ -108,8 +110,7 @@ class _page_2State extends State<page_2> {
                       builder: (BuildContext) {
                         return AlertDialog(
                           title: const Text("Error"),
-                          content: Text("Your number is not correct, " +
-                              "Please enter your number correctly."),
+                          content: const Text("Your number is not correct, Please enter your number correctly."),
                           actions: [
                             TextButton(
                                 child: const Text("Ok"),
@@ -268,8 +269,7 @@ class _page_2State extends State<page_2> {
                               builder: (BuildContext) {
                                 return AlertDialog(
                                   title: const Text("Error"),
-                                  content: Text("Your number is not correct, " +
-                                      "Please enter your number correctly."),
+                                  content: const Text("Your number is not correct, Please enter your number correctly."),
                                   actions: [
                                     TextButton(
                                         child: const Text("Ok"),

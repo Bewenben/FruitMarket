@@ -1,12 +1,10 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, avoid_print, unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
 import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
 import 'package:task1/shoppingcartpage.dart';
 
 import '../constants/constants.dart';
-import '../notifications/notifications_main.dart';
-
 class Favourites extends StatefulWidget {
   const Favourites({Key? key}) : super(key: key);
 
