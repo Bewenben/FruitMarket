@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:smooth_star_rating_null_safety/smooth_star_rating_null_safety.dart';
-import 'package:task1/shoppingcartpage.dart';
-
+import 'package:task1/shop/shoppingcartpage.dart';
 import '../constants/constants.dart';
+
 class Favourites extends StatefulWidget {
   const Favourites({Key? key}) : super(key: key);
 
@@ -42,7 +42,6 @@ class _FavouritesState extends State<Favourites> {
       child: ListView.builder(
           itemCount: FavList.length,
           itemBuilder: (context, index) {
-            int p = FavList[index].price;
             return Column(
               children: [
                 Row(

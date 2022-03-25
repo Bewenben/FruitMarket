@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task1/account/account.dart';
 import 'package:task1/fav/favourites_main.dart';
 import 'package:task1/home/menupage.dart';
-import 'package:task1/shoppingcartpage.dart';
+import 'package:task1/shop/shoppingcartpage.dart';
 
 import '../constants/constant.dart';
 

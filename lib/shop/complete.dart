@@ -2,22 +2,22 @@
 
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:task1/home/home.dart';
 import 'package:task1/login/page_1.dart';
-import 'package:task1/login/page_6.dart';
 
-class page_5 extends StatefulWidget {
-  const page_5({Key? key}) : super(key: key);
+class transactioncomplete extends StatefulWidget {
+  const transactioncomplete({Key? key}) : super(key: key);
 
   @override
-  State<page_5> createState() => _page_5State();
+  State<transactioncomplete> createState() => _transactioncompleteState();
 }
 
-class _page_5State extends State<page_5> {
+class _transactioncompleteState extends State<transactioncomplete> {
   @override
   void initState() {
     Timer(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const page_6()));
+          MaterialPageRoute(builder: (context) => const Bottomnavbar()));
     });
   }
 
@@ -41,7 +41,7 @@ class _page_5State extends State<page_5> {
             Padding(
               padding: EdgeInsets.only(top: height5 * .1),
               child: const Text(
-                "Verification Successful",
+                "Transaction Completed",
                 style: TextStyle(color: Colors.black, fontSize: 25),
               ),
             )

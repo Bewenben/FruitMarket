@@ -17,7 +17,7 @@ class Intro1 extends StatelessWidget {
         children: [
           InkWell(
             onTap: () {
-              Navigator.pushReplacement(context,
+              Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const page_1()));
             },
             child: const Padding(
@@ -91,7 +91,7 @@ class Intro1 extends StatelessWidget {
           const SizedBox(height: 40),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushReplacement(context,
+              Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const Intro2()));
             },
             style: ButtonStyle(

@@ -32,7 +32,7 @@ class _page_2State extends State<page_2> {
         //crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(top: height * .1, left: 55),
+            padding: EdgeInsets.only(top: height * .1, left: 48),
             child: Row(children: [
               Container(
                 decoration: const BoxDecoration(
@@ -55,20 +55,23 @@ class _page_2State extends State<page_2> {
                       LengthLimitingTextInputFormatter(3),
                     ]),
               ),
-              Container(
-                decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(50))),
-                width: width * .6,
-                child: TextField(
-                    readOnly: true,
-                    showCursor: true,
-                    controller: txtctr2,
-                    maxLength: 4,
-                    decoration: const InputDecoration(
-                        border: OutlineInputBorder(), counterText: ''),
-                    inputFormatters: [
-                      LengthLimitingTextInputFormatter(4),
-                    ]),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0),
+                child: Container(
+                  decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(50))),
+                  width: width * .6,
+                  child: TextField(
+                      readOnly: true,
+                      showCursor: true,
+                      controller: txtctr2,
+                      maxLength: 4,
+                      decoration: const InputDecoration(
+                          border: OutlineInputBorder(), counterText: ''),
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(4),
+                      ]),
+                ),
               ),
             ]),
           ),
@@ -110,7 +113,8 @@ class _page_2State extends State<page_2> {
                       builder: (BuildContext) {
                         return AlertDialog(
                           title: const Text("Error"),
-                          content: const Text("Your number is not correct, Please enter your number correctly."),
+                          content: const Text(
+                              "Your number is not correct, Please enter your number correctly."),
                           actions: [
                             TextButton(
                                 child: const Text("Ok"),
@@ -269,7 +273,8 @@ class _page_2State extends State<page_2> {
                               builder: (BuildContext) {
                                 return AlertDialog(
                                   title: const Text("Error"),
-                                  content: const Text("Your number is not correct, Please enter your number correctly."),
+                                  content: const Text(
+                                      "Your number is not correct, Please enter your number correctly."),
                                   actions: [
                                     TextButton(
                                         child: const Text("Ok"),

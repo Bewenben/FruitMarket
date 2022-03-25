@@ -46,8 +46,8 @@ class _page_1State extends State<page_1> {
         padding: const EdgeInsets.only(bottom: 80),
         child: InkWell(
           onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => const page_2()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const page_2()));
           },
           child: Container(
             height: height * .1,
@@ -112,7 +112,7 @@ class _page_1State extends State<page_1> {
             ),
             child: InkWell(
               onTap: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const Bottomnavbar()));
@@ -139,7 +139,7 @@ class _page_1State extends State<page_1> {
             ),
             child: InkWell(
               onTap: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const Bottomnavbar()));

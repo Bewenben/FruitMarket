@@ -15,7 +15,7 @@ class Intro2 extends StatelessWidget {
         children: [
           InkWell(
             onTap: (){
-              Navigator.pushReplacement(
+              Navigator.push(
                   context,
                   MaterialPageRoute(builder:(context) => const page_1())
               );
@@ -79,7 +79,7 @@ class Intro2 extends StatelessWidget {
           const SizedBox(height: 50),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushReplacement(
+              Navigator.push(
                   context,
                   MaterialPageRoute(builder:(context) => const Intro3())
               );

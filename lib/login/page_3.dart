@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types
+// ignore_for_file: camel_case_types, unrelated_type_equality_checks, avoid_types_as_parameter_names, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
 import 'package:task1/constants/keyboard.dart';
@@ -93,8 +93,27 @@ class page_3 extends StatelessWidget {
             padding: const EdgeInsets.only(top: 8.0),
             child: InkWell(
               onTap: () {
-                Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (context) => const page_4()));
+                if (txt1 != "" && txt2 != "" && txt3 != "" && txt4 != "") {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => const page_4()));
+                } else {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext) {
+                        return AlertDialog(
+                          title: const Text("Error"),
+                          content: const Text(
+                              "Your verification code is not correct, Please enter your verificaiton code correctly."),
+                          actions: [
+                            TextButton(
+                                child: const Text("Ok"),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                })
+                          ],
+                        );
+                      });
+                }
               },
               child: Container(
                 height: height2 * .1,
@@ -216,10 +235,32 @@ class page_3 extends StatelessWidget {
                       ),
                       child: InkWell(
                         onTap: () {
-                          Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const page_4()));
+                          if (txt1 != "" &&
+                              txt2 != "" &&
+                              txt3 != "" &&
+                              txt4 != "") {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const page_4()));
+                          } else {
+                            showDialog(
+                                context: context,
+                                builder: (BuildContext) {
+                                  return AlertDialog(
+                                    title: const Text("Error"),
+                                    content: const Text(
+                                        "Your verification code is not correct, Please enter your verificaiton code correctly."),
+                                    actions: [
+                                      TextButton(
+                                          child: const Text("Ok"),
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          })
+                                    ],
+                                  );
+                                });
+                          }
                         },
                         child: Container(
                           height: height2 * 0.1,

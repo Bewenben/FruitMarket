@@ -71,9 +71,11 @@ class Intro3 extends StatelessWidget {
           const SizedBox(height: 50),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const page_1()));
+              Navigator.pushAndRemoveUntil(context,
+                  MaterialPageRoute(builder: (context) => const page_1()), (route) => false);
             },
+            // This button removes all the previous pages from the stack and replace it with the next page
+            // The next page will be the first page in the stack
             style: ButtonStyle(
               backgroundColor:
                   MaterialStateProperty.all<Color>(const Color(0xff69A03A)),

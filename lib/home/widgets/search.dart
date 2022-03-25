@@ -34,7 +34,7 @@ class SearchInput extends StatelessWidget {
               color: Colors.white,
               width: 340,
               child: TextFormField(
-                style: const TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.black),
                 decoration: const InputDecoration(
                     border: InputBorder.none,
                     icon: Icon(Icons.search, color: Colors.grey),

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:task1/help_main/help_main.dart';
-
 import '../constants/constants.dart';
 
 class NotificationsToday extends StatelessWidget {
@@ -9,14 +7,14 @@ class NotificationsToday extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 470,
+        height: 480,
         width: 410,
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView.builder(
               physics: const NeverScrollableScrollPhysics(),
               itemCount: TodayList.length,
-              itemBuilder: (context,index){
+              itemBuilder: (context, index) {
                 return Column(
                   children: [
                     Row(
@@ -25,8 +23,9 @@ class NotificationsToday extends StatelessWidget {
                           height: 100,
                           width: 100,
                           decoration: BoxDecoration(
-                              image: DecorationImage(image: AssetImage(TodayList[index].imageURL))
-                          ),
+                              image: DecorationImage(
+                                  image:
+                                      AssetImage(TodayList[index].imageURL))),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 20),
@@ -36,48 +35,55 @@ class NotificationsToday extends StatelessWidget {
                                 SizedBox(
                                   width: 250,
                                   child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        TodayList[index].name, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                                        TodayList[index].name,
+                                        style: const TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w600),
                                         textAlign: TextAlign.start,
                                       ),
-                                      IconButton(onPressed: (){
-                                        Navigator.push(context, MaterialPageRoute(builder: (context) {
-                                          return const HelpScreen(); //temporarily goes back to my orders screen
-                                        }));
-                                      },
-                                          icon: const Icon(Icons.more_vert_rounded))
+                                      IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(
+                                              Icons.more_vert_rounded))
                                     ],
                                   ),
                                 ),
                                 Container(
-                                  padding: const EdgeInsets.only(bottom: 20),
+                                    padding: const EdgeInsets.only(bottom: 20),
                                     width: 180,
                                     child: Text(
-                                      TodayList[index].description, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w400, color: Colors.grey),
+                                      TodayList[index].description,
+                                      style: const TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w400,
+                                          color: Colors.grey),
                                       textAlign: TextAlign.start,
-                                    )
-                                ),
+                                    )),
                                 Text(
-                                  TodayList[index].time, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
+                                  TodayList[index].time,
+                                  style: const TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w400),
                                   textAlign: TextAlign.start,
                                 ),
-                              ]
-                          ),
+                              ]),
                         )
                       ],
                     ),
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 8),
-                      child: Divider(thickness: 1,color: Colors.grey,),
+                      child: Divider(
+                        thickness: 1,
+                        color: Colors.grey,
+                      ),
                     )
                   ],
                 );
-              }
-          ),
-        )
-
-    );
+              }),
+        ));
   }
 }

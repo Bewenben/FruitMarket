@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:task1/intro/intro1.dart';
 import 'package:task1/intro/intro3.dart';
 
-
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
 
@@ -15,26 +14,23 @@ class Splash extends StatefulWidget {
 
 class _SplashState extends State<Splash> {
   @override
-  void initState(){
+  void initState() {
     super.initState();
     Timer(const Duration(seconds: 3), () {
       File file = File("images/opened.txt");
-      String seen = "0";//file.readAsStringSync();
+      String seen = "0"; //file.readAsStringSync();
       //print(seen);
-      if (seen=="0") {
+      if (seen == "0") {
         file.writeAsString("1");
         Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder:(context) => const Intro1())
-        );
+            context, MaterialPageRoute(builder: (context) => const Intro1()));
       } else {
         Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder:(context) => const Intro3())
-        );
+            context, MaterialPageRoute(builder: (context) => const Intro3()));
       }
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,11 +41,23 @@ class _SplashState extends State<Splash> {
             top: 300,
             left: 0,
             right: 0,
-            child: Text("Fruit Market", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40),textAlign: TextAlign.center,),
+            child: Text(
+              "Fruit Market",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40),
+              textAlign: TextAlign.center,
+            ),
           ),
           Positioned(
-            child: Image.asset("images/fruits.png", height: 500, fit: BoxFit.fill,),
-            bottom: -70,
+            child: Image.asset(
+              "images/fruits.png",
+              height: 400,
+              width: 100,
+              fit: BoxFit.fill,
+            ),
+            bottom: -100,
             left: -150,
             right: -150,
           )
