@@ -148,31 +148,31 @@ class _shoppingcartState extends State<shoppingcart> {
                                 const SizedBox(
                                   width: 70,
                                 ),
-                                ButtonTheme(
-                                    minWidth: 10,
-                                    height: 35,
-                                    child: RaisedButton(
-                                      onPressed: () {
-                                        setState(() {
-                                          if (foodinfos[index].counts > 1) {
-                                            foodinfos[index].counts--;
-                                          }
-                                        });
-                                      },
-                                      elevation: 0,
-                                      color: Colors.white,
-                                      child: const Text(
-                                        "-",
-                                        style: TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      shape: RoundedRectangleBorder(
-                                          side: const BorderSide(
-                                              color: Colors.black, width: 0.8),
-                                          borderRadius:
-                                              BorderRadius.circular(10)),
-                                    )),
+                                // ButtonTheme(
+                                //     minWidth: 10,
+                                //     height: 35,
+                                //     child: RaisedButton(
+                                //       onPressed: () {
+                                //         setState(() {
+                                //           if (foodinfos[index].counts > 1) {
+                                //             foodinfos[index].counts--;
+                                //           }
+                                //         });
+                                //       },
+                                //       elevation: 0,
+                                //       color: Colors.white,
+                                //       child: const Text(
+                                //         "-",
+                                //         style: TextStyle(
+                                //             fontSize: 15,
+                                //             fontWeight: FontWeight.bold),
+                                //       ),
+                                //       shape: RoundedRectangleBorder(
+                                //           side: const BorderSide(
+                                //               color: Colors.black, width: 0.8),
+                                //           borderRadius:
+                                //               BorderRadius.circular(10)),
+                                //     )),
                                 const SizedBox(
                                   width: 5,
                                 ),
@@ -180,29 +180,29 @@ class _shoppingcartState extends State<shoppingcart> {
                                 const SizedBox(
                                   width: 5,
                                 ),
-                                ButtonTheme(
-                                    minWidth: 10,
-                                    height: 35,
-                                    child: RaisedButton(
-                                      onPressed: () {
-                                        setState(() {
-                                          foodinfos[index].counts++;
-                                        });
-                                      },
-                                      elevation: 0,
-                                      color: Colors.white,
-                                      child: const Text(
-                                        "+",
-                                        style: TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      shape: RoundedRectangleBorder(
-                                          side: const BorderSide(
-                                              color: Colors.black, width: 0.8),
-                                          borderRadius:
-                                              BorderRadius.circular(10)),
-                                    )),
+                                // ButtonTheme(
+                                //     minWidth: 10,
+                                //     height: 35,
+                                //     child: RaisedButton(
+                                //       onPressed: () {
+                                //         setState(() {
+                                //           foodinfos[index].counts++;
+                                //         });
+                                //       },
+                                //       elevation: 0,
+                                //       color: Colors.white,
+                                //       child: const Text(
+                                //         "+",
+                                //         style: TextStyle(
+                                //             fontSize: 15,
+                                //             fontWeight: FontWeight.bold),
+                                //       ),
+                                //       shape: RoundedRectangleBorder(
+                                //           side: const BorderSide(
+                                //               color: Colors.black, width: 0.8),
+                                //           borderRadius:
+                                //               BorderRadius.circular(10)),
+                                //     )),
                                 const SizedBox(
                                   width: 5,
                                 ),
@@ -239,29 +239,29 @@ class _shoppingcartState extends State<shoppingcart> {
                 const SizedBox(
                   width: 140,
                 ),
-                ButtonTheme(
-                    minWidth: 100,
-                    height: 40,
-                    child: RaisedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const buyerdetails()));
-                      },
-                      elevation: 0,
-                      color: mBackgroundcolor,
-                      child: const Text(
-                        "Place Order",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                      shape: RoundedRectangleBorder(
-                          side: BorderSide(color: Colors.black.withOpacity(.2)),
-                          borderRadius: BorderRadius.circular(5)),
-                    )),
+                // ButtonTheme(
+                //     minWidth: 100,
+                //     height: 40,
+                //     child: RaisedButton(
+                //       onPressed: () {
+                //         Navigator.push(
+                //             context,
+                //             MaterialPageRoute(
+                //                 builder: (context) => const buyerdetails()));
+                //       },
+                //       elevation: 0,
+                //       color: mBackgroundcolor,
+                //       child: const Text(
+                //         "Place Order",
+                //         style: TextStyle(
+                //           color: Colors.white,
+                //           fontSize: 15,
+                //         ),
+                //       ),
+                //       shape: RoundedRectangleBorder(
+                //           side: BorderSide(color: Colors.black.withOpacity(.2)),
+                //           borderRadius: BorderRadius.circular(5)),
+                //     )),
               ],
             ),
             const SizedBox(

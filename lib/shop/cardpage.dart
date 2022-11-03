@@ -300,31 +300,31 @@ class buyerdetails extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            ButtonTheme(
-              minWidth: 370,
-              height: 45,
-              child: RaisedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              paymentpage(number: lastfourcontroller.text)));
-                },
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                color: mBackgroundcolor,
-                child: const Text(
-                  "ADD CARD NUMBER",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                  ),
-                ),
-                elevation: 10.0,
-              ),
-            ),
+            // ButtonTheme(
+            //   minWidth: 370,
+            //   height: 45,
+            //   child: RaisedButton(
+            //     onPressed: () {
+            //       Navigator.push(
+            //           context,
+            //           MaterialPageRoute(
+            //               builder: (context) =>
+            //                   paymentpage(number: lastfourcontroller.text)));
+            //     },
+            //     shape: RoundedRectangleBorder(
+            //         borderRadius: BorderRadius.circular(10)),
+            //     color: mBackgroundcolor,
+            //     child: const Text(
+            //       "ADD CARD NUMBER",
+            //       style: TextStyle(
+            //         color: Colors.white,
+            //         fontWeight: FontWeight.bold,
+            //         fontSize: 15,
+            //       ),
+            //     ),
+            //     elevation: 10.0,
+            //   ),
+            // ),
             const SizedBox(
               height: 30,
             ),

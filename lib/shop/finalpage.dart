@@ -321,30 +321,30 @@ class _paymentpageState extends State<paymentpage> {
             const SizedBox(
               height: 20,
             ),
-            ButtonTheme(
-              minWidth: 370,
-              height: 45,
-              child: RaisedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const processtranscation()));
-                },
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                color: mBackgroundcolor,
-                child: const Text(
-                  "PAY NOW",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
-                  ),
-                ),
-                elevation: 0.0,
-              ),
-            ),
+            // ButtonTheme(
+            //   minWidth: 370,
+            //   height: 45,
+            //   child: RaisedButton(
+            //     onPressed: () {
+            //       Navigator.push(
+            //           context,
+            //           MaterialPageRoute(
+            //               builder: (context) => const processtranscation()));
+            //     },
+            //     shape: RoundedRectangleBorder(
+            //         borderRadius: BorderRadius.circular(10)),
+            //     color: mBackgroundcolor,
+            //     child: const Text(
+            //       "PAY NOW",
+            //       style: TextStyle(
+            //         color: Colors.white,
+            //         fontWeight: FontWeight.bold,
+            //         fontSize: 15,
+            //       ),
+            //     ),
+            //     elevation: 0.0,
+            //   ),
+            // ),
             const SizedBox(
               height: 10,
             ),
